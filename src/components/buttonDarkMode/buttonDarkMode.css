@@ -1,0 +1,59 @@
+.backgroundDarkMode {
+    width: 100px;
+    height: 40px;
+    position: relative;
+    z-index: 3;
+    display: block;
+    background: #ebebeb;
+    border-radius: 200px;
+    box-shadow: inset 0px 5px 15px rgba(0, 0, 0, 0.4), inset 0px -5px 15px rgba(255, 255, 255, 0.4);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.backgroundDarkMode img {
+    position: absolute;
+    top: 0px;
+    z-index: 100;
+}
+
+.backgroundDarkMode .sun {
+    left: 12px;
+    fill: #fff;
+    transition: 0.3s;
+    height: 100%;
+    width: 20%;
+}
+
+.backgroundDarkMode .moon {
+    left: 70px;
+    fill: #7e7e7e;
+    transition: 0.3s;
+    height: 100%;
+    width: 20%;
+}
+
+
+.backgroundDarkMode::after {
+    transition: 0.3s;
+    content: "";
+    width: 42%;
+    height: 40px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: linear-gradient(180deg, #ffffff, var(--skill-background));
+    border-radius: 180px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+.backgroundDarkModeChecked {
+    background: #686868;
+}
+
+.backgroundDarkModeChecked::after {
+    left: 100px;
+    transform: translateX(-100%);
+    /*   background: linear-gradient(180deg, #777, #3a3a3a); */
+}

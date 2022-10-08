@@ -1,0 +1,20 @@
+:root {
+    /*   change in changeDarkMode for default */
+    --background-color: white;
+    --color-text: black;
+    /*     change darkMode */
+    --background-color-dark: black;
+    --background-color-light: white;
+    --color-text-dark: white;
+    --color-text-light: black;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--color-text);
+}
+
+nav {
+    background-color: var(--background-color);
+    color: var(--color-text);
+}
