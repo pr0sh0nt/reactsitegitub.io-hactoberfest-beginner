@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&family=Overpass:wght@400;700&family=Poppins:wght@400;500;600&display=swap');
+
 :root {
     /*   change in changeDarkMode for default */
     --background-color: white;
@@ -12,6 +14,7 @@
 body {
     background-color: var(--background-color);
     color: var(--color-text);
+    font-family: 'Poppins', sans-serif;
 }
 
 nav {
